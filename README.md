@@ -131,6 +131,13 @@ Spilt Editor
 
 ## Code Editing
 
+Choice a word
+
+```bash
+Ctrl+D
+```
+
+
 Go To Start & End Of Line
 
 ```bash
