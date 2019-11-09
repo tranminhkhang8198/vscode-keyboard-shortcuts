@@ -44,6 +44,13 @@ Close Window
 Ctrl+W
 ```
 
+Switch focus between terminal and text editor
+
+```bash
+Ctrl+J
+```
+
+
 ## Working With Files
 
 Sidebar Focus
