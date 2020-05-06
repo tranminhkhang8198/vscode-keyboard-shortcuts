@@ -1,0 +1,133 @@
+{
+  // [vim-setup]
+  "vim.easymotion": true,
+  "vim.incsearch": true,
+  "vim.useSystemClipboard": true,
+  "vim.useCtrlKeys": true,
+  "vim.hlsearch": true,
+  "vim.insertModeKeyBindings": [
+    // mapping esc
+    {
+      "before": [
+        "j",
+        "j"
+      ],
+      "after": [
+        "<Esc>"
+      ]
+    },
+    // saving file
+    {
+      "before": [
+        "<leader>",
+        "w"
+      ],
+      "commands": [
+        ":w!"
+      ],
+      "after": [
+        "<Esc>"
+      ]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    // clear search highlighting
+    {
+      "before": [
+        "<leader>",
+        "<space>"
+      ],
+      "commands": [
+        ":nohl"
+      ]
+    },
+    // saving file
+    {
+      "before": [
+        "<leader>",
+        "w"
+      ],
+      "commands": [
+        ":w!"
+      ]
+    },
+    // Insert new line without insert mode
+    {
+      "before": [
+        "o"
+      ],
+      "after": [
+        "o",
+        "<Esc>"
+      ]
+    },
+    // Insert new up line without insert mode
+    {
+      "before": [
+        "O"
+      ],
+      "after": [
+        "O",
+        "<Esc>"
+      ]
+    },
+    // Better moving
+    {
+      "before": [
+        "j"
+      ],
+      "after": [
+        "g",
+        "j"
+      ]
+    },
+    // Toggle sidebar
+    {
+      "before": [
+        "<leader>",
+        "a"
+      ],
+      "commands": [
+        "workbench.action.toggleSidebarVisibility"
+      ]
+    },
+    // Close active editor
+    {
+      "before": [
+        "<leader>",
+        "q"
+      ],
+      "commands": [
+        "workbench.action.closeActiveEditor"
+      ]
+    }
+  ],
+  "vim.leader": ",",
+  "vim.handleKeys": {
+    "<C-a>": false,
+    "<C-f>": false
+  },
+  // Switching language when exit insert mode
+  "vim.autoSwitchInputMethod.enable": true,
+  "vim.autoSwitchInputMethod.defaultIM": "com.apple.keylayout.ABC",
+  "vim.autoSwitchInputMethod.obtainIMCmd": "/usr/local/bin/im-select",
+  "vim.autoSwitchInputMethod.switchIMCmd": "/usr/local/bin/im-select {im}",
+  // Yank highlight
+  "vim.highlightedyank.enable": true,
+  "vim.highlightedyank.color": "rgba(250, 240, 170, 0.5)",
+  // [#vim-setup]
+  "editor.fontFamily": "Fira Code",
+  "editor.fontSize": 13,
+  "editor.fontLigatures": true,
+  "editor.lineNumbers": "relative",
+  "explorer.confirmDelete": false,
+  "editor.formatOnSave": true,
+  "workbench.iconTheme": "vscode-icons",
+  "terminal.integrated.fontFamily": "FuraMono Nerd Font",
+  "workbench.colorTheme": "Dracula Soft",
+  "synthwave84.brightness": "0.1",
+  "terminal.integrated.fontSize": 13,
+  "terminal.integrated.shell.osx": "/bin/zsh",
+  "window.zoomLevel": 0,
+  "sync.gist": "d6723750c5d34dda16661039466ba1b3"
+}
