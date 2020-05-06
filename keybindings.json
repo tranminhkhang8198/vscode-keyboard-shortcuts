@@ -1,0 +1,60 @@
+// Place your key bindings in this file to override the defaults
+[
+    // Moving like tmux style
+    {
+        "key": "ctrl+k",
+        "command": "workbench.action.navigateUp"
+    },
+    {
+        "key": "ctrl+j",
+        "command": "workbench.action.navigateDown"
+    },
+    {
+        "key": "ctrl+h",
+        "command": "workbench.action.navigateLeft"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "workbench.action.navigateRight"
+    },
+    {
+        "key": "ctrl+h",
+        "command": "workbench.action.previousPanelView",
+        "when": "panelFocus"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "workbench.action.nextPanelView",
+        "when": "panelFocus"
+    },
+    {
+        "key": "ctrl+k",
+        "command": "workbench.files.action.focusOpenEditorsView",
+        "when": "sideBarFocus && explorerViewletVisible"
+    },
+    {
+        "key": "ctrl+j",
+        "command": "workbench.files.action.focusFilesExplorer",
+        "when": "sideBarFocus && explorerViewletVisible && !filesExplorerFocus"
+    },
+    // Split screen vertical and horizontal
+    {
+        "key": "ctrl+a \\",
+        "command": "workbench.action.splitEditor"
+    },
+    {
+        "key": "ctrl+a shift+\\",
+        "command": "workbench.action.splitEditorOrthogonal"
+    },
+    // Create new file and new folder in sidebar
+    {
+        "key": "ctrl+n",
+        "command": "explorer.newFile",
+        "when": "!editorFocus"
+    },
+    {
+        "key": "ctrl+shift+n",
+        "command": "explorer.newFolder",
+        "when": "!editorFocus"
+    }
+]
